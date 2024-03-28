@@ -8,7 +8,7 @@ const items = [
     rating: 4.4,
   },
   {
-    title: "Свеча `Spiral",
+    title: "Свеча `Spiral`",
     description: "100% соевый воск, хлопковый фитиль. Размер: 15*9 см",
     tags: ["sale"],
     price: 15,
@@ -231,7 +231,7 @@ const itemsContainer = document.querySelector('#shop-items');
 const nothingFound = document.querySelector('#nothing-found');
 
 function prepareShopItem(shopItem) {
-  const { title, description, tags, img, price } = shopItem;
+  const { title, description, tags, img, price, rating } = shopItem;
   const itemClone = itemTemplate.content.cloneNode(true);
 
   itemClone.querySelector('h1').textContent = title;
